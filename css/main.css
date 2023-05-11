@@ -73,7 +73,7 @@ a {
 }
 
 .watch__btn::after{
-   content: url(/img/about/watch-play.svg);
+   content: url(../img/about/watch-play.svg);
    position: absolute;
    top: 23px;
    right: 35px;
