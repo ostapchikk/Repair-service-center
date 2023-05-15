@@ -23,8 +23,3 @@ function updateCounter() {
 }
 
 setInterval(updateCounter, 1000);
-
-setTimeout(function () {
-    preloader.remove();
-    countdown.style.display = 'flex';
-}, 1000);
