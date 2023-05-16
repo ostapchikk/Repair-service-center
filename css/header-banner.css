@@ -1,0 +1,137 @@
+.header-banner{
+   padding-top: 290px;
+   padding-bottom: 139px;
+   background: url(../img/header/header-bg.png) no-repeat center;
+   overflow: hidden;
+
+}
+
+.header__row {
+   position: relative;
+}
+
+.header__content {
+   display: flex;
+}
+
+.header__img{
+   position: absolute;
+   width: 100%;
+   right: -499px;
+   top: -136px;
+}
+
+.header__title {
+   font-family: 'Bebas Neue Bold';
+   font-style: normal;
+   font-size: 110px;
+   line-height: 100px;
+   letter-spacing: -0.01em;
+}
+
+.header__desc {
+   width: 625px;
+   margin-top: 20px;
+   font-family: 'Gilroy Regular';
+   font-size: 24px;
+   line-height: 34px;
+   letter-spacing: -0.01em;
+   color: var(--text-secondory);
+}
+
+.header__discount {
+   position: absolute;
+   padding: 69px 20px 30px 20px;
+   left: 1033px;
+   top: 79px;
+   
+   background: #FFFFFF;
+   box-shadow: 0px 71px 80px rgba(255, 107, 0, 0.11), 0px 21.4044px 24.1177px rgba(255, 107, 0, 0.0716748), 0px 8.8903px 10.0172px rgba(255, 107, 0, 0.055), 0px 3.21545px 3.62304px rgba(255, 107, 0, 0.0383252);
+   border-radius: 30px;
+
+   z-index: 3;
+}
+.header__discount-title {
+   position: absolute;
+   font-family: 'Bebas Neue Bold';
+   font-size: 113px;
+   line-height: 113px;
+   color: var(--orange);
+   top: -38px;
+   left: 30px;
+}
+.header__discount-desc {
+   position: relative;
+   width: 213px;
+   font-family: "Gilroy Regular";
+   font-size: 20px;
+   line-height: 26px;
+   margin-bottom: 45px;
+}
+
+.header__discount-desc::after{
+   content: "";
+   top: 100px;
+   left: 0;
+   position: absolute;
+   width: 205px;
+   height: 2px;
+   background-color: var(--text-color);
+   opacity: 0.1;
+}
+
+.bold__discount{
+   font-family: 'Gilroy Bold';
+}
+
+.discount__end{
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;   
+   opacity: 0.5;
+   margin-bottom: 8px;
+}
+
+
+.countdown{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+
+.time{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   width: 48px;
+   height: 55px;
+}
+
+.time h3 {
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 38px;
+   width: 38px;
+   margin-bottom: 4px;
+}
+
+.time:not(:last-child)::after {
+   content: ":";
+   position: absolute;
+   top: 2px;
+   left: 55px;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 29px;   
+}
+
+.timer__part{
+   font-weight: 600;
+   font-size: 11px;
+   line-height: 13px;
+   letter-spacing: -0.01em;
+   opacity: 0.5;
+}

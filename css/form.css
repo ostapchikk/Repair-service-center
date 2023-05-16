@@ -1,0 +1,87 @@
+.write {
+   position: relative;
+   width: var(--container-width);
+   height: 328px;
+   border: 1px solid #C7D1D7;
+   border-radius: 30px;
+}
+
+.discount {
+   position: absolute;
+   font-family: 'Bebas Neue Bold';
+   padding: 0 15px;
+   top: -43px;
+   left: 125px;
+   font-size: 113.007px;
+   line-height: 113px;
+   color: var(--orange);
+   text-shadow: 0px 100px 80px rgba(255, 107, 0, 0.11), 0px 46.233px 36.9864px rgba(255, 107, 0, 0.0815843), 0px 26.4535px 21.1628px rgba(255, 107, 0, 0.0689459), 0px 16.0571px 12.8457px rgba(255, 107, 0, 0.0593943), 0px 9.67509px 7.74008px rgba(255, 107, 0, 0.0506057), 0px 5.38772px 4.31018px rgba(255, 107, 0, 0.0410541), 0px 2.31722px 1.85378px rgba(255, 107, 0, 0.0284157);
+   background-color: #F4F9FC;
+}
+
+.discount::after {
+   content: url(../img/header/fire.svg) ;
+   position: absolute;
+   left: 100px;
+   top: -15px;
+}
+
+.write__wrapper {
+   display: flex;
+   height: 100%;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.write__desc {
+   width: 377px;
+   font-family: 'Bebas Neue Bold';
+   font-size: 48px;
+   line-height: 48px;
+   text-transform: uppercase;
+}
+
+.write__desc-red{
+   color: var(--red_normal);
+}
+
+.write__form {
+   display: grid;
+   grid-template-columns: 240px 260px; 
+   grid-template-rows: repeat(3, 64px);
+   gap: 24px;
+   row-gap: 20px;
+}
+.write__form-day {
+   border: 1px solid #DADADA;
+   border-radius: 15px;
+   padding: 19px 24px;
+}
+.write__form-time {
+   border: 1px solid #DADADA;
+   border-radius: 15px;
+   padding: 19px 24px;
+
+}
+.write__form-phone {
+   grid-column-start: 1;
+   grid-column-end: 3;
+   border: 1px solid #DADADA;
+   border-radius: 15px;
+   padding: 19px 24px;
+}
+.form__btn {
+   padding: 18px 30px;
+   color: #FFFF;
+   background: var(--red_normal);
+   border-radius: 15px;  
+   transition: .3s ease-in-out;
+}
+
+.form__btn:hover {
+   background: var(--red_hover);
+}
+
+.form__btn:active{
+   box-shadow: inset 0px 3px 0px #D10018;
+}
