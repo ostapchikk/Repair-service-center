@@ -7,7 +7,7 @@
 @import url(./order.css);
 @import url(./form.css);
 @import url(./footer.css);
-@import url(./media.css);
+@import url(./modal-consultation.css);
 
 :root {
    --red_normal: #E2001A;  
@@ -17,6 +17,10 @@
    --text-color: #13171D;
    --text-secondory: #444444;
    --orange: #FF6B00;
+}
+
+.none{ 
+   display: none;
 }
 
 .container {

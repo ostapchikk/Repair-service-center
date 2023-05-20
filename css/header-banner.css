@@ -1,13 +1,13 @@
 .header-banner{
    padding-top: 290px;
    padding-bottom: 139px;
-   background: url(../img/header/header-bg.png) no-repeat center;
+   background-position-x: 50px ;
    overflow: hidden;
-
 }
 
 .header__row {
    position: relative;
+   display: flex;
 }
 
 .header__content {
@@ -42,6 +42,8 @@
 .header__discount {
    position: absolute;
    padding: 69px 20px 30px 20px;
+   width: 264px;
+   height: 309px;
    left: 1033px;
    top: 79px;
    
@@ -81,7 +83,8 @@
 }
 
 .bold__discount{
-   font-family: 'Gilroy Bold';
+   font-family: 'Gilroy';
+   font-weight: 700;
 }
 
 .discount__end{

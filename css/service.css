@@ -31,7 +31,14 @@
    border-radius: 30px;
    align-items: start;
    justify-content: end;
+   transition: .3s ease-in-out;
 }
+
+.service__item:hover {
+   scale: 1.05;
+}
+
+
 .service__item-img {
    position: absolute;
    top: -25px;

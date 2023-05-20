@@ -4,7 +4,7 @@ function Timer(){
    const minutes = document.querySelector('#minutes');
    const seconds = document.querySelector('#seconds');
    
-   const nextTime = Date.parse(new Date()) + 10000000;
+   let nextTime = Date.parse(new Date()) + 10000000;
    
    function updateCounter() {
       const currentTime = new Date();
@@ -18,12 +18,16 @@ function Timer(){
       const minutesLeft = Math.floor(diff / 1000 / 60) % 60;
       // Секундк всего, далее остаток от преобразования в минуты, секунд осталось
       const secondsLeft = Math.floor(diff / 1000) % 60;
-   
-      hours.innerText = hoursLeft < 10 ? '0' + hoursLeft : hoursLeft;
-      minutes.innerText = minutesLeft < 10 ? '0' + minutesLeft : minutesLeft;
-      seconds.innerText = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft;
+      
+      if (diff <=0 ){
+         nextTime = Date.parse(new Date()) + 10000000;
+      }else {
+         hours.innerText = hoursLeft < 10 ? '0' + hoursLeft : hoursLeft;
+         minutes.innerText = minutesLeft < 10 ? '0' + minutesLeft : minutesLeft;
+         seconds.innerText = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft;
+      }
+      
    }
-   
    setInterval(updateCounter, 1000);
 }
 

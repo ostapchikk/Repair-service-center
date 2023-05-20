@@ -76,12 +76,24 @@
    background: var(--red_normal);
    border-radius: 15px;  
    transition: .3s ease-in-out;
+   background-color: rgba(226, 0, 26, 0.6);
+   pointer-events: none;
+}
+
+.form__btn.btn-active{
+   pointer-events: auto;
+   background-color: var(--red_normal);
+   cursor: pointer;
+   transition: .3s ease-in-out;
 }
 
 .form__btn:hover {
-   background: var(--red_hover);
+   background-color: var(--red_hover);
+   box-shadow: 0px 10px 30px rgba(252, 20, 47, 0.2);
+   border-radius: 15px;
 }
 
 .form__btn:active{
+   background-color: var(--red_hover);
    box-shadow: inset 0px 3px 0px #D10018;
 }

@@ -29,7 +29,8 @@
                   </ul>
                </div>
                <div class="nav-contacts">
-                  <p class="nav-adress">г. Кишинев, ул. Бэнулеску Бодони, д.33<br> <a href="#" class="">Мы на карте</a>
+                  <p class="nav-adress">Восточная Улица, 14, Беляевский Район, Москва<br> <a href="#" class="">Мы на
+                        карте</a>
                   </p>
                   <p class="nav-contacts__phone">044 55 44 55 <span class="slash">/</span> 044 55 44 55</p>
                   <button class="nav-phone-call"></button>
@@ -40,8 +41,8 @@
    </header>
 
    <main class="main">
-      <section class="header-banner">
-         <div class="container">
+      <section class="header-banner ">
+         <div class="container banner">
             <div class="header__row">
 
                <div class="header__content">
@@ -49,9 +50,9 @@
                   <div class="header__desc">
                      <h2 class="header__title">Проблемы с Вашим устройством?</h2>
                      <p class="header__desc">Решаем любые проблемы!<br>Большой склад и опытные мастера</p>
-                     <button class="consultation__btn">Бесплатная консультация</button>
+                     <button class="consultation__btn" id="cosnsultation-btn">Бесплатная консультация</button>
                   </div>
-                  
+
                   <div class="header__img">
                      <img src="./img/header/banner-header.png" alt="">
                   </div>
@@ -85,7 +86,29 @@
 
       </section>
 
-      <section class="advantages">
+      <div class="modal__consultation" id="modal-consultation">
+         <div class="modal__wrapper">
+            <div class="modal__consultation-wrapper">
+               <h2 class="modal__consultation-title">Оставьте заявку на<br><span class="modal__red"> бесплатную
+                  </span>консультацию</h2>
+               <img src="./img/modal/close.svg" alt="close" class="modal__close-btn" id="consultation-close-btn">
+               <form class="modal__consultation-form">
+                  <input placeholder="Имя" type="text" class="modal__form-name">
+                  <input placeholder="Телефон" type="tel" id="phone" name="phone"
+                     class="modal__form-phone phone mask-phone'">
+                  <input class="modal__form-btn" type="submit" value="Получить консультацию">
+               </form>
+            </div>
+            <div class="modal__consultation-accept none">
+               <img src="./img/modal/close.svg" alt="close" class="modal__close-btn" id="consultation-close-btn">
+               <div class="modal__accept-img"><img src="./img/modal/accept-modal.svg" alt="" class="accept-img" ></div>
+               <h3 class="modal__accept-title">Ваша заявка отправлена</h3>
+               <p class="modal__aceppt-desc">Мы свяжемся с вами в ближайшее время</p>
+            </div>
+         </div>
+      </div>
+
+      <section class="advantages ">
          <div class="container">
             <div class="advantages__row">
 
@@ -111,7 +134,7 @@
          </div>
       </section>
 
-      <section class="service">
+      <section class="service ">
          <div class="container">
             <div class="service__row">
 
@@ -159,7 +182,7 @@
          </div>
       </section>
 
-      <section class="about-company">
+      <section class="about-company ">
          <div class="container">
             <div class="about-company__wrapper">
 
@@ -237,7 +260,7 @@
          </div>
       </section>
 
-      <section class="orders">
+      <section class="orders ">
          <div class="container">
 
             <div class="orders__wrapper">
@@ -257,15 +280,16 @@
                   <form action="#" class="write__form">
                      <input type="date" class="write__form-day" placeholder="День">
                      <input type="time" class="write__form-time" placeholder="Время">
-                     <input type="text" class="write__form-phone" placeholder="Телефон">
-                     <button class="form__btn">Записаться</button>
+                     <input type="tel" class="write__form-phone" placeholder="Телефон">
+                     <input type="submit" class="form__btn" value="Записаться">
                   </form>
                </div>
             </div>
 
          </div>
       </section>
-      <footer class="footer">
+
+      <footer class="footer ">
          <div class="footer__container">
             <div class="footer__wrapper">
                <div class="footer__contacts">
@@ -308,10 +332,11 @@
          </div>
       </footer>
 
-      <div class="footer__map">
+      <div class="footer__map ">
          <img src="./img/footer/map.jpg" alt="" class="footer__map-img">
       </div>
    </main>
+   <script src="https://unpkg.com/imask"></script>
    <script src="./js/main.js" type="module"></script>
 </body>
 

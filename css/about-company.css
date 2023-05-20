@@ -47,12 +47,6 @@
    row-gap: 39px;
 }
 
-.about-company__content::after{
-   content: url(../img/about/bg_2.svg);
-   position: absolute;
-   right: -130px;
-   bottom: 65px;
-}
 
 .about-company__item {
    width: 344px;
