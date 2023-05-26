@@ -68,8 +68,21 @@
    display: flex;
    gap: 15px;
 }
+.socials__link a{
+   transition: .2s ease-in-out;
+}
+.socials__link a:hover {
+   transform: scale(1.2);
+}
 
 .footer__map{
+   position: absolute;
+   width: 100%;
+   height: 750px;
+   margin: 0 auto;
+   left: 0;
+   right: 0;
+   z-index: -1;
 }
 .footer__map img{
    display: block;

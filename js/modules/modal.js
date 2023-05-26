@@ -1,4 +1,5 @@
 function modal() {
+   const modalWrapper = document.querySelector(".modal__wrapper")
    const openBtn = document.getElementById("cosnsultation-btn");
    const closeBtn = document.getElementById("consultation-close-btn");
    const consultationModal = document.getElementById("modal-consultation");
@@ -6,11 +7,35 @@ function modal() {
    const consultationSignUp = document.querySelector(".modal__consultation-accept")
    const signUpBtn = document.querySelector(".modal__form-btn");
    const signUpBtnForm = document.querySelector(".form__btn");
+   const phoneCall = document.querySelector(".nav-phone-call")
+   const watchBtn = document.querySelector(".watch__btn")
+   const videoBtn = document.querySelectorAll(".video__btn")
+   const watchModal = document.querySelector("#modal-watch")
 
-   openBtn.addEventListener("click" ,function(){
+
+   const openModal = function(){
       consultationModal.classList.add("open")
-   })  
-  
+      consultationForm.classList.add("open")
+      consultationForm.classList.remove("none")
+      consultationSignUp.classList.add("none")
+   }
+
+   const openWatchModal = function() {
+      watchModal.classList.add("open")
+      consultationForm.classList.add("none")
+   }
+
+   openBtn.addEventListener("click" , openModal)  
+
+
+   watchBtn.addEventListener("click" , openWatchModal)  
+
+   videoBtn.forEach((item) => {
+      item.addEventListener("click" , openWatchModal)
+   })
+
+   phoneCall.addEventListener("click" , openModal);
+
    closeBtn.addEventListener("click" ,function (){
       consultationModal.classList.remove("open")
    })  
@@ -30,28 +55,20 @@ function modal() {
    window.addEventListener('keydown', (e) => {
       if (e.key === "Escape") {
          consultationModal.classList.remove("open")
+         watchModal.classList.remove("open")
       }
    })
 
    document.querySelector("#modal-consultation .modal__wrapper").addEventListener('click', event => {
       event._isClickWithInModal = true;
    });
-   consultationModal.addEventListener('click', event => {
+
+   let closeModal = event => {
       if (event._isClickWithInModal) return;
       event.currentTarget.classList.remove('open');
-   });
-
-   consultationModal.addEventListener('mouseout', function modalFix() {
- 
-      if (consultationModal.classList.contains("open")){
-         return
-      } else {
-         consultationForm.classList.remove("none")
-         consultationSignUp.classList.add("none")
-      }
-
-   })
- 
+   }
+   consultationModal.addEventListener('click',closeModal);
+   watchModal.addEventListener('click', closeModal);
 }
 
 export default modal;

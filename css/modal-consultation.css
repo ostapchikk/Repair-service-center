@@ -150,3 +150,30 @@
    font-size: 18px;
    line-height: 21px;
 }
+
+/* --------------- Modal watch ---------------- */
+
+.modal__watch-wrapper{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 960px;
+   height: 540px;
+   background: #FFFFFF;
+   border-radius: 20px;
+   margin: 30px 15px;
+   color: #FFFF;
+   scale: 0;
+   transition: .8s;
+}
+
+.modal__consultation.open .modal__watch-wrapper{
+   scale: 1;
+}
+
+.modal__watch-wrapper iframe{
+   width: 80%;
+   height: 80%;
+   border-radius: 15px;   
+}

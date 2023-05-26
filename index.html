@@ -13,23 +13,24 @@
    <title>Repair - service center</title>
 </head>
 
-<body>
-   <header class="header-section">
+<body id="body">
+   <header class="header-section" id="header-section">
       <div class="container-header">
          <div class="header">
-            <a href="#!"><img src="./img/header/logo.svg" alt="Логотип 'Arron-service center' " class="nav-logo"></a>
+            <a href="#body"><img src="./img/header/logo.svg" alt="Логотип 'Arron-service center' " class="nav-logo"></a>
             <nav class="nav">
                <div class="nav-categories">
                   <ul class="nav-categories__list">
-                     <li><a href="#" class="nav-categories__item">Наши услуги</a></li>
-                     <li><a href="#" class="nav-categories__item">О компании</a></li>
-                     <li><a href="#" class="nav-categories__item">Отзывы</a></li>
-                     <li><a href="#" class="nav-categories__item">Выполненные заказы</a></li>
-                     <li><a href="#" class="nav-categories__item">Контакты</a></li>
+                     <li><a href="#service" class="nav-categories__item">Наши услуги</a></li>
+                     <li><a href="#about-company" class="nav-categories__item">О компании</a></li>
+                     <li><a href="#feedback" class="nav-categories__item">Отзывы</a></li>
+                     <li><a href="#orders" class="nav-categories__item">Выполненные заказы</a></li>
+                     <li><a href="#footer" class="nav-categories__item">Контакты</a></li>
                   </ul>
                </div>
                <div class="nav-contacts">
-                  <p class="nav-adress">Восточная Улица, 14, Беляевский Район, Москва<br> <a href="#" class="">Мы на
+                  <p class="nav-adress">Восточная Улица, 14, Беляевский Район, Москва<br> <a href="#footer__map"
+                        class="">Мы на
                         карте</a>
                   </p>
                   <p class="nav-contacts__phone">044 55 44 55 <span class="slash">/</span> 044 55 44 55</p>
@@ -41,14 +42,14 @@
    </header>
 
    <main class="main">
-      <section class="header-banner ">
+      <section class="header-banner" id="header-banner">
          <div class="container banner">
             <div class="header__row">
 
                <div class="header__content">
 
                   <div class="header__desc">
-                     <h2 class="header__title">Проблемы с Вашим устройством?</h2>
+                     <h2 class="header__title _anim-items">Проблемы с Вашим устройством?</h2>
                      <p class="header__desc">Решаем любые проблемы!<br>Большой склад и опытные мастера</p>
                      <button class="consultation__btn" id="cosnsultation-btn">Бесплатная консультация</button>
                   </div>
@@ -101,14 +102,14 @@
             </div>
             <div class="modal__consultation-accept none">
                <img src="./img/modal/close.svg" alt="close" class="modal__close-btn" id="consultation-close-btn">
-               <div class="modal__accept-img"><img src="./img/modal/accept-modal.svg" alt="" class="accept-img" ></div>
+               <div class="modal__accept-img"><img src="./img/modal/accept-modal.svg" alt="" class="accept-img"></div>
                <h3 class="modal__accept-title">Ваша заявка отправлена</h3>
                <p class="modal__aceppt-desc">Мы свяжемся с вами в ближайшее время</p>
             </div>
          </div>
       </div>
 
-      <section class="advantages ">
+      <section class="advantages " id="advantages">
          <div class="container">
             <div class="advantages__row">
 
@@ -134,11 +135,11 @@
          </div>
       </section>
 
-      <section class="service ">
+      <section class="service " id="service">
          <div class="container">
             <div class="service__row">
 
-               <div class="service__title">
+               <div class="service__title _anim-items">
                   <h2>Мы работаем c устройствами:</h2>
                </div>
 
@@ -182,21 +183,28 @@
          </div>
       </section>
 
-      <section class="about-company ">
+      <div class="modal__consultation" id="modal-watch">
+         <div class="modal__watch-wrapper">
+            <img src="./img/modal/close.svg" alt="close" class="modal__close-btn" id="consultation-close-btn">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
+      </div>
+
+      <section class="about-company" id="about-company">
          <div class="container">
             <div class="about-company__wrapper">
 
                <div class="about-company__aside">
-                  <h2 class="about-company__title">О компании Arron</h2>
+                  <h2 class="about-company__title">О компании Repair</h2>
                   <p class="about-company__desc">Узнайте о нашей компании больше из видео за 1 минуту.</p>
-                  <div class="watch__btn">Смотреть</div>
+                  <div class="watch__btn" id="watch__btn">Смотреть</div>
                </div>
 
                <div class="about-company__content">
 
                   <div class="about-company__item">
                      <img src="./img/header/adv-1.svg" alt="" class="about-company__img">
-                     <h3 class="abot-company__item-title">Выезжаем в любую точку Кишинева</h3>
+                     <h3 class="abot-company__item-title">Выезжаем в любую точку Москвы</h3>
                      <p class="about-company__item-desc">Выезд курьера Буюканы Чеканы, Рышкановка, центр, Ботаника.</p>
                   </div>
 
@@ -224,7 +232,7 @@
 
             </div>
 
-            <div class="feedback__wrapper">
+            <div class="feedback__wrapper" id="feedback">
 
                <div class="feedback__header">
                   <h2 class="feedback__title">Отзывы счастливых клиентов</h2>
@@ -235,22 +243,22 @@
                   <div class="feedback__video-item">
                      <div class="feedback__video-player"><img src="./img/about/feedback-1.jpg" alt=""
                            class="feedback__img"></div>
-                     <div class="video__btn"></div>
+                     <div class="video__btn" ></div>
                   </div>
                   <div class="feedback__video-item">
                      <div class="feedback__video-player"><img src="./img/about/feedback-2.jpg" alt=""
                            class="feedback__img"></div>
-                     <div class="video__btn"></div>
+                     <div class="video__btn" ></div>
                   </div>
                   <div class="feedback__video-item">
                      <div class="feedback__video-player"><img src="./img/about/feedback-3.jpg" alt=""
                            class="feedback__img"></div>
-                     <div class="video__btn"></div>
+                     <div class="video__btn" ></div>
                   </div>
                   <div class="feedback__video-item">
                      <div class="feedback__video-player"><img src="./img/about/feedback-4.jpg" alt=""
                            class="feedback__img"></div>
-                     <div class="video__btn"></div>
+                     <div class="video__btn" ></div>
                   </div>
 
                </div>
@@ -260,7 +268,7 @@
          </div>
       </section>
 
-      <section class="orders ">
+      <section class="orders" id="orders">
          <div class="container">
 
             <div class="orders__wrapper">
@@ -289,8 +297,8 @@
          </div>
       </section>
 
-      <footer class="footer ">
-         <div class="footer__container">
+      <footer class="footer">
+         <div class="footer__container" id="footer">
             <div class="footer__wrapper">
                <div class="footer__contacts">
 
@@ -306,7 +314,7 @@
 
                   <div class="footer__contacts-item">
                      <img src="./img/footer/point.svg" alt="" class="contact__img">
-                     <h3 class="contact__link">г. Кишинев, ул. Бэнулеску Бодони, д.33</h3>
+                     <h3 class="contact__link">Восточная Улица, 14, Беляевский Район, Москва</h3>
                   </div>
 
                </div>
@@ -332,10 +340,10 @@
          </div>
       </footer>
 
-      <div class="footer__map ">
-         <img src="./img/footer/map.jpg" alt="" class="footer__map-img">
+      <div class="footer__map" id="footer__map">
       </div>
    </main>
+   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>"></script>
    <script src="https://unpkg.com/imask"></script>
    <script src="./js/main.js" type="module"></script>
 </body>
